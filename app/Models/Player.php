@@ -17,4 +17,9 @@ class Player extends Model
         'birthdate' => 'date'
     ];
 
+    public function bats()
+    {
+        return $this->hasMany(Bat::class);
+    }
+
 }
